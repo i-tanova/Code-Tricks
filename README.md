@@ -37,3 +37,16 @@ class KotlinView @JvmOverloads constructor(
             )
         }
 ```
+5. Multiple null check
+
+```
+left?.let {
+            c.drawRect(
+                left,
+                top ?: return@let,
+                right ?: return@let,
+                bottom ?: return@let,
+                mClearPaint
+            )
+        }
+```
