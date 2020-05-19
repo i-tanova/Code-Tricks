@@ -26,3 +26,13 @@ class KotlinView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr)
 ```
+4. Get color for Android 21
+
+```
+        mContext?.let {
+            backgroundColor = ContextCompat.getColor(
+                mContext ?: return@let,
+                R.color.error
+            )
+        }
+```
