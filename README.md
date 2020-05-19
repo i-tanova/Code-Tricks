@@ -19,3 +19,10 @@ private fun observeViewState(viewStateEmitter: Observable<AsteroidViewState>) {
             ).addTo(disposables)
     }
   ```
+3. How to extend View in Kotlin
+
+```
+class KotlinView @JvmOverloads constructor(
+        context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr)
+```
