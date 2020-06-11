@@ -50,3 +50,9 @@ left?.let {
             )
         }
 ```
+
+6. Create bundle
+
+```
+ val bundle = bundleOf(USERNAME_KEY to myDataset[position])
+```
